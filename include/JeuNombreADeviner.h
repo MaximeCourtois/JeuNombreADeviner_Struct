@@ -10,6 +10,9 @@
 // Historique du fichier:
 /*************************************************/
 #include <string>
+#include <cstdlib>
+#include <random>
+#include <time.h>
 using namespace std;
 
 //Type: structure TJoueur
@@ -70,7 +73,7 @@ void MajResultatsJoueur(TJoueur joueur, int nbEssais, bool gagne);
 // Paramètres de sortie:
 // Paramètres d'entrée/sortie :
 
-void ResultatsJoueur(TJoueur joueur, int &nbsucces, int &nbechec, int & nbessais);
+void ResultatsJoueur(TJoueur joueur, int & nbsucces, int & nbechec, int & nbessais);
 
 
 // Nom :Nom
@@ -79,5 +82,9 @@ void ResultatsJoueur(TJoueur joueur, int &nbsucces, int &nbechec, int & nbessais
 // Valeur de retour : nom du joueur
 
 string Nom(TJoueur joueur);
+
+
+void AfficherJoueur(TJoueur joueur);
+
 
 

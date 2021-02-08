@@ -10,21 +10,30 @@
 //                              ctime
 // Historique du fichier:
 /*************************************************/
+
 #include <iostream>
+#include <cstdlib>
+#include <random>
+#include <time.h>
 using namespace std;
 #include "../include/JeuNombreAdeviner.h"
+
 
 // Nom :InitJoueur
 // Rôle : Crée un joueur. Initialise toutes les informations du joueur.
 //        Le nombre de tentatives, de parties gagnées et de parties jouées seront à 0.
-// Paramètres d'entrée :
-// Paramètres de sortie :
-// Paramètres d'entrée/sortie :
+// Paramètres d'entrée : un_nom
+// Paramètres de sortie : joueurAcreer
+
 
 void InitJoueur(TJoueur& joueurAcreer, string un_nom)
 {
-    //A COMPLETER
+   joueurAcreer.nom = un_nom;
+   joueurAcreer.nbPartiesJouees = 0;
+   joueurAcreer.nbPartiesGagnees = 0;
+   joueurAcreer.nbTentatives = 0;
 }
+
 
 
 // Nom :TirerNombreMystere
@@ -33,8 +42,10 @@ void InitJoueur(TJoueur& joueurAcreer, string un_nom)
 
 int TirerNombreMystere()
 {
-    //A COMPLETER
-        return -1;
+    int nombreADeviner;
+    srand(time(NULL));
+    nombreADeviner = rand() % 10 + 1;
+    return nombreADeviner;
 }
 
 
@@ -47,7 +58,44 @@ int TirerNombreMystere()
 
 void JouerPartie(TJoueur& un_joueur, int nombreADeviner)
 {
-    //A COMPLETER
+    int NbEssai = 0;
+    int NbInput = 0;
+    while (NbEssai <4)
+    {
+        cout <<"entrer un nombre : ";
+        cin >> NbInput;
+        if (NbInput > nombreADeviner)
+        {
+            NbEssai = NbEssai + 1;
+            cout <<"Le Nombre est plus petit que "<< NbInput << endl;
+        }
+        else if (NbInput < nombreADeviner)
+            {
+                NbEssai = NbEssai + 1;
+                cout <<"Le Nombre est plus grand que "<< NbInput << endl;
+            }
+            else
+            {
+            NbEssai = NbEssai + 10;
+            cout << "----------------------------" <<endl;
+            cout <<"Bravo tu a trouver le nombre en "<< NbEssai - 9 << " essais" <<endl;
+            cout << "----------------------------" <<endl;
+            }
+
+    }
+    if (NbInput == nombreADeviner)
+    {
+        NbEssai = NbEssai - 9;
+        un_joueur.nbPartiesGagnees = un_joueur.nbPartiesGagnees +1;
+    }
+    if (NbEssai == 4 && NbInput != nombreADeviner)
+    {
+        cout << "----------------------------" <<endl;
+        cout <<"C'est perdu "<<endl;
+        cout << "----------------------------" <<endl;
+    }
+    un_joueur.nbPartiesJouees = un_joueur.nbPartiesJouees + 1;
+    un_joueur.nbTentatives = un_joueur.nbTentatives + NbEssai;
 }
 
 
@@ -59,7 +107,12 @@ void JouerPartie(TJoueur& un_joueur, int nombreADeviner)
 
 void MajResultatsJoueur(TJoueur joueur, int nbEssais, bool gagne)
 {
-   // A COMPLETER
+    if (gagne==true)
+    {
+        joueur.nbPartiesGagnees++;
+    }
+    joueur.nbPartiesJouees++;
+    joueur.nbTentatives = joueur.nbTentatives + nbEssais;
 }
 
 // Nom : ResultatsJoueur
@@ -70,9 +123,11 @@ void MajResultatsJoueur(TJoueur joueur, int nbEssais, bool gagne)
 // Paramètres de sortie:
 // Paramètres d'entrée/sortie :
 
-void ResultatsJoueur(TJoueur joueur, int& nbsucces, int& nbechec, int& nbessais)
+void ResultatsJoueur(TJoueur joueur, int & nbsucces, int & nbechec, int & nbessais)
 {
-    // A COMPLETER
+joueur.nbPartiesGagnees = joueur.nbPartiesGagnees + nbsucces;
+joueur.nbPartiesJouees = joueur.nbPartiesJouees + nbsucces + nbechec;
+joueur.nbTentatives = joueur.nbTentatives + nbessais;
 }
 
 // Nom :Nom
@@ -85,3 +140,13 @@ string Nom(TJoueur joueur){
     return joueur.nom;
 }
 
+
+
+
+
+void AfficherJoueur(TJoueur joueur)
+{
+    cout << "nbPartiesJouees : " << joueur.nbPartiesJouees <<endl;
+    cout << "nbPartiesGagnees : " << joueur.nbPartiesGagnees <<endl;
+    cout << "nbTentatives : " << joueur.nbTentatives <<endl;
+}
