@@ -1,0 +1,107 @@
+# depslib dependency file v1.0
+1611568901 source:c:\users\marie-pierre\documents\limayrac\cours\miniprojet\jeunombreadeviner\jeunombreadeviner\jeunombreadeviner2021\src\mainjeunombreadeviner.cpp
+	<iostream>
+	"../include/JeuNombreADeviner.h"
+
+1611569194 c:\users\marie-pierre\documents\limayrac\cours\miniprojet\jeunombreadeviner\jeunombreadeviner\jeunombreadeviner2021\include\jeunombreadeviner.h
+	<string>
+
+1611569194 source:c:\users\marie-pierre\documents\limayrac\cours\miniprojet\jeunombreadeviner\jeunombreadeviner\jeunombreadeviner2021\src\jeunombreadeviner.cpp
+	<iostream>
+	"../include/JeuNombreAdeviner.h"
+
+1611569194 source:c:\users\marie-pierre\documents\limayrac\cours\miniprojet\jeunombreadeviner\jeunombreadeviner2021\jeunombreadeviner_struct\src\jeunombreadeviner.cpp
+	<iostream>
+	"../include/JeuNombreAdeviner.h"
+
+1611569194 c:\users\marie-pierre\documents\limayrac\cours\miniprojet\jeunombreadeviner\jeunombreadeviner2021\jeunombreadeviner_struct\include\jeunombreadeviner.h
+	<string>
+
+1611570465 source:c:\users\marie-pierre\documents\limayrac\cours\miniprojet\jeunombreadeviner\jeunombreadeviner2021\jeunombreadeviner_struct\src\mainjeunombreadeviner.cpp
+	<iostream>
+	"../include/JeuNombreADeviner.h"
+
+1614549744 source:c:\users\marie-pierre\documents\limayrac\cours\miniprojet\jeunombreadeviner\jeunombreadeviner2021\jeunombreadeviner_classe\src\joueur.cpp
+	<iostream>
+	"../include/Joueur.h"
+
+1614549744 c:\users\marie-pierre\documents\limayrac\cours\miniprojet\jeunombreadeviner\jeunombreadeviner2021\jeunombreadeviner_classe\include\joueur.h
+	<string>
+
+1612546881 source:c:\users\marie-pierre\documents\limayrac\cours\miniprojet\jeunombreadeviner\jeunombreadeviner2021\jeunombreadeviner_classe\src\partie.cpp
+	<cstdlib>
+	<ctime>
+	<iostream>
+	"../include/Partie.h"
+
+1614549744 c:\users\marie-pierre\documents\limayrac\cours\miniprojet\jeunombreadeviner\jeunombreadeviner2021\jeunombreadeviner_classe\include\partie.h
+	<string>
+	"../include/Joueur.h"
+
+1614549744 source:c:\users\marie-pierre\documents\limayrac\cours\miniprojet\jeunombreadeviner\jeunombreadeviner2021\jeunombreadeviner_classe\src\mainjeunombreadeviner.cpp
+	<iostream>
+	"../include/Partie.h"
+
+1614593988 source:c:\users\marie-pierre\documents\limayrac\cours\miniprojet\jeunombreadeviner\jeunombreadeviner2021\jeunombreadeviner_classev1\src\joueur.cpp
+	<iostream>
+	"../include/Joueur.h"
+
+1614594516 c:\users\marie-pierre\documents\limayrac\cours\miniprojet\jeunombreadeviner\jeunombreadeviner2021\jeunombreadeviner_classev1\include\joueur.h
+	<string>
+
+1614593988 source:c:\users\marie-pierre\documents\limayrac\cours\miniprojet\jeunombreadeviner\jeunombreadeviner2021\jeunombreadeviner_classev1\src\mainjeunombreadeviner.cpp
+	<iostream>
+	"../include/Partie.h"
+
+1614594517 c:\users\marie-pierre\documents\limayrac\cours\miniprojet\jeunombreadeviner\jeunombreadeviner2021\jeunombreadeviner_classev1\include\partie.h
+	<string>
+	"../include/Joueur.h"
+
+1614589611 source:c:\users\marie-pierre\documents\limayrac\cours\miniprojet\jeunombreadeviner\jeunombreadeviner2021\jeunombreadeviner_classev1\src\partie.cpp
+	<cstdlib>
+	<ctime>
+	<iostream>
+	"../include/Partie.h"
+
+1615732808 source:c:\users\mqxco\desktop\git marche pas\src\joueur.cpp
+	<iostream>
+	"../include/Joueur.h"
+
+1615731740 c:\users\mqxco\desktop\git marche pas\include\joueur.h
+	<string>
+
+1615733033 source:c:\users\mqxco\desktop\git marche pas\src\mainjeunombreadeviner.cpp
+	<iostream>
+	"../include/Partie.h"
+
+1614594517 c:\users\mqxco\desktop\git marche pas\include\partie.h
+	<string>
+	"../include/Joueur.h"
+
+1614594435 source:c:\users\mqxco\desktop\git marche pas\src\partie.cpp
+	<cstdlib>
+	<ctime>
+	<iostream>
+	"../include/Partie.h"
+
+1615822695 source:z:\c++\git marche pas\src\joueur.cpp
+	<iostream>
+	"../include/Joueur.h"
+
+1615822695 z:\c++\git marche pas\include\joueur.h
+	<string>
+
+1615822695 source:z:\c++\git marche pas\src\mainjeunombreadeviner.cpp
+	<iostream>
+	"../include/Partie.h"
+
+1615822008 z:\c++\git marche pas\include\partie.h
+	<string>
+	"../include/Joueur.h"
+
+1615822004 source:z:\c++\git marche pas\src\partie.cpp
+	<cstdlib>
+	<ctime>
+	<iostream>
+	"../include/Partie.h"
+
